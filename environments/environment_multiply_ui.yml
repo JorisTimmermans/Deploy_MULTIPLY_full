@@ -1,0 +1,4 @@
+name: multiply_ui
+channels:
+  - defaults
+prefix: /home/jtimmer1/software/miniconda/envs/multiply_ui

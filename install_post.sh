@@ -1,0 +1,41 @@
+echo 'Modifying paths within installed files to enable correct operation'
+sed -i 's,/datastore,'"$data_dir"',' $config_dir'/data_stores.yml'
+sed -i 's,/datastore,'"$data_dir"',' $config_dir'/forward_models.txt'
+sed -i 's,/datastore,'"$data_dir"',' $config_dir'/multiply_config.yaml'
+sed -i 's,/datastore,'"$data_dir"',' $software_dir'/multiply-ui/multiply_ui/server/resources/pm_request_template.json'
+
+sed -i 's,/home/jtimmer1,'"$rooting_dir"',' $config_dir'/data_stores.yml'
+
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $config_dir'/multiply_config.yaml'
+
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/multiply-ui/multiply_ui/server/controller.py'
+
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/__init__.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/combine_biophys_outputs.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/combine_hres_biophys_outputs.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/create_s1_kaska_inference_output_files.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/create_s2_kaska_inference_output_files.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/data_access_get_static.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/data_access_put_s2_l2.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/determine_s1_priors.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/get_data_for_s1_preprocessing.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/get_data_for_s2_preprocessing.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/infer_s1_kaska.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/infer_s2_kafka.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/infer_s2_kaska.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/post_process.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/preprocess_s1.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/preprocess_s2.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/retrieve_s2_priors.py'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $rooting_dir'/scripts/stack_s1.py'
+
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/multiply_config.yaml'
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/tools/tools.py'
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/multiply_ui_server'
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/multiply_jupyter_lab_server'
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/multiply_file_structure_constructor'
+#sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/vm-support/vm_support/test/test_utils.py'
+
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/kaska/kaska/TwoNN/two_nn.py'
+
+sed -i 's,/home/jtimmer1/software,'"$software_dir"',' $software_dir'/multiply-ui/multiply_ui/server/resources/pm_request_template.json'
