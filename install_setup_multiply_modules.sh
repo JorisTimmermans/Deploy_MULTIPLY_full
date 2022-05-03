@@ -1,4 +1,4 @@
-#conda activate multiply-platform
+conda activate multiply-platform
 
 #########################################
 echo 'installing SIAC atmospheric correction'

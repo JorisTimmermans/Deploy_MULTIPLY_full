@@ -1,4 +1,4 @@
-export rooting_dir='/home/joris'
+export rooting_dir='/home/test2'
 export installs_dir=$rooting_dir'/installs'
 export software_dir=$rooting_dir'/software'
 export data_dir=$rooting_dir'/data'
@@ -66,7 +66,7 @@ echo 'Finished installation'
 echo 'To launch Multiply run "./launch.sh" in the terminal'
 
 #################
-bash install_configure_jupyter.sh
+#bash install_configure_jupyter.sh
 
 
 ##################
