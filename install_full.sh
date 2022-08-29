@@ -49,7 +49,9 @@ unzip archive/multiply_configuration.zip -d $config_dir
 
 echo 'setting up scripts'
 ln -s $software_dir'/multiply-ui/multiply_ui/server/resources/scripts' $rooting_dir'/scripts'
-ln -s $software_dir'/multiply-ui/notebooks' $rooting_dir'/notebooks'
+#ln -s $software_dir'/multiply-ui/notebooks' $rooting_dir'/notebooks'
+cp -R notebooks $rooting_dir'/notebooks'
+chmod +Rx $rooting_dir'/notebooks'
 
 ################################
 #### modify files to update paths
